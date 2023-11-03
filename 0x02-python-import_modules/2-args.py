@@ -2,7 +2,7 @@
 if __name__ == "__main__":
     import sys
 
-    args = sys.argv    
+    args = sys.argv
     size = len(args) - 1
 
     if size > 1:
