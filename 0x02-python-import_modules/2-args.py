@@ -15,4 +15,4 @@ if __name__ == "__main__":
 
     else:
         print(f"{} arguments".format(size))
-        print(f"{}: {}".format(size, argv[i]))
+        print(f"{}: {}".format(size, argv[1]))
