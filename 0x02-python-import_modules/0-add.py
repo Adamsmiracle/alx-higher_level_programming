@@ -5,4 +5,4 @@ if __name__ == __main__:
     a = 1
     b = 2
 
-    Print(f"a + b = {add(a, b)")
+    Print(f"{} + {} = {}".format(a, b, add(a, b))
