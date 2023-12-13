@@ -1,17 +1,19 @@
-
 #!/usr/bin/python3
 
-"""Defines a base model class
-"""
+"""Defines a base model class"""
+
 
 import csv
 import json
 import turtle
 
+
 class Base:
     """Base model
 
+
     This represents the 'base' class for the entire project
+
 
     Private class attributes:
         __nb_objects (int): number of instantiated objects
@@ -33,6 +35,3 @@ class Base:
         else:
             Base.__nb_objects += 1
             self.id = Base.__nb_objects
-
-
-
