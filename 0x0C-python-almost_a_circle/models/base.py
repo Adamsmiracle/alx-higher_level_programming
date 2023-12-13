@@ -1,13 +1,14 @@
 
 #!/usr/bin/python3
 
-"""Defines a base model class"""
+"""Defines a base model class
+"""
 
 import csv
 import json
 import turtle
 
-class base:
+class Base:
     """Base model
 
     This represents the 'base' class for the entire project
