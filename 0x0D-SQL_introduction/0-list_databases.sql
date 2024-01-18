@@ -1,2 +1,2 @@
---list all data bases
-SHOW DATABASES;
+--list all data bases of MYSQL server
+SHOW DATABASES ORDER BY `Database`;
