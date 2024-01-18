@@ -1,2 +1,2 @@
---- Lists all the elemenst of the database hbtn_0c_0
+--- Lists all rows of the table first_table in my MYSQL server.
 SELECT * FROM `first_table`;
