@@ -1,3 +1,3 @@
 #!/bin/bash
-# sends a GET request to the URL, and displays the body of the response
-cur -sL "$1"
+# GET to check the body of a page that returns 200 response
+curl -sL "$1"
