@@ -1,23 +1,26 @@
 #!/usr/bin/python3
-"""Makes a post request to the url"""
+"""
+Write a Python script that takes in a letter and sends a POST request
+to http://0.0.0.0:5000/search_user with the letter as a parameter.
+"""
 
-import sys
 import requests
-
+import sys
 
 if __name__ == "__main__":
     url = 'http://0.0.0.0:5000/search_user'
     if len(sys.argv) > 1:
-        data = sys.argv[1]
+        q = sys.argc[1]
     else:
-        data = ""
-    payload = {'q': data}
-    response = requests.post(url, data=payload)
+        q = ""
+    data = {'q': q}
+    res = requests.post(url, data=data)
     try:
-        jsonres = response.json()
+        jsonres = res.json()
         if jsonres:
             print(f"[{jsonres.get('id')}] {jsonres.get('name')}")
         else:
-            print("No result")
+            print("No results")
+
     except ValueError:
-        print("Not a valid JSON")
+        print("not a valid JSON")
