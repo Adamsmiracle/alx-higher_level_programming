@@ -11,7 +11,7 @@ request(process.argv[2], (error, response, body) => {
 
     films.foeEach((film) => {
       const characters = films.characters;
-      if (characters.inlcudes('https://swapi-api.alx-tools.com/api/people/18/')) {
+      if (characters.inlcudes('https://swapi-api.alx-tools.com/api/films/18/')) {
         numOfMovies++;
       }
     });
