@@ -1,14 +1,14 @@
-const request = require('request');
+#!/usr/bin/node
 
+const request = require('request');
 const url = process.argv[2];
 
-request(url, (error, res, body) => {
-  if (error) {
-    console.log(error);
-  } else if (res.statusCode === 200) {
-    const tasks = JSON.parse(body);
+request(url, function (err, response, body) {
+  if (err) {
+    console.log(err);
+  } else if (response.statusCode === 200) {
     const completed = {};
-
+    const tasks = JSON.parse(body);
     for (const i in tasks) {
       const task = tasks[i];
       if (task.completed === true) {
@@ -21,6 +21,6 @@ request(url, (error, res, body) => {
     }
     console.log(completed);
   } else {
-    console.log('An error occured. Status code: ', +res.statusCode);
+    console.log('An error occured. Status code: ' + response.statusCode);
   }
 });
